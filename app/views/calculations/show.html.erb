@@ -1,0 +1,12 @@
+<div class="booyah-box col-10 offset-1 text-center">
+<% if @result.output == true %>
+<h1> <%= @result.input %> is a <%= @result.output %> balance! </h1>
+<% end %>
+<% if @result.output == false %>
+<h1> <%= @result.input %> is a <%= @result.output %> balance! Recheck your work! </h1>
+<% end %>
+
+<%= link_to 'Try Again!', root_path, class: 'btn btn-primary btn-large'  %>
+<br />
+<br />
+</div>

@@ -1,0 +1,15 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter an expression to see if your parentheses are correctly balanced:</h1>
+  <%= simple_form_for @calculation do |f| %>
+    <%= f.input :input %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+
+<% if @result %>
+
+  Your input: <%= @result.input %>
+  Your input is: <%= @result.output %>
+
+  <% end %>
+</div>
